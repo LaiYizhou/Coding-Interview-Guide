@@ -15,6 +15,10 @@ public class main : MonoBehaviour {
 
     void Test()
     {
+        //Cat cat = new Cat("cat");
+
+
+
         int[] arr = new[] {3, 4, 5, 1, 2, 1};
 
         for(int i = 0; i<arr.Length; i++)
