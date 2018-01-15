@@ -94,6 +94,7 @@
     <Compile Include="Assets\01StackAndQueue\DogAndCatQueue\Pet.cs" />
     <Compile Include="Assets\01StackAndQueue\DogAndCatQueue\PetExtend.cs" />
     <Compile Include="Assets\01StackAndQueue\HanoiProblem\Hanoi.cs" />
+    <Compile Include="Assets\01StackAndQueue\MaxAndMinValue\MaxAndMinValue.cs" />
     <Compile Include="Assets\01StackAndQueue\MaxSubRect\MaxSubRect.cs" />
     <Compile Include="Assets\01StackAndQueue\MaxTree\MaxTree.cs" />
     <Compile Include="Assets\01StackAndQueue\MaxWindow\MaxWindow.cs" />
