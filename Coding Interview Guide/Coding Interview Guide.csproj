@@ -102,6 +102,16 @@
     <Compile Include="Assets\01StackAndQueue\ReverseStack\ReverseStack.cs" />
     <Compile Include="Assets\01StackAndQueue\SortStackByStack\SortStackByStack.cs" />
     <Compile Include="Assets\01StackAndQueue\TwoStackQueue\TwoStackQueue.cs" />
+    <Compile Include="Assets\02LinkedList\CommonPart\CommonPart.cs" />
+    <Compile Include="Assets\02LinkedList\DoubleNode.cs" />
+    <Compile Include="Assets\02LinkedList\JosephusKill\JosephusProblem.cs" />
+    <Compile Include="Assets\02LinkedList\LastKthNode\LastKthNode.cs" />
+    <Compile Include="Assets\02LinkedList\LinkedListHelper.cs" />
+    <Compile Include="Assets\02LinkedList\Node.cs" />
+    <Compile Include="Assets\02LinkedList\Palindrome\Palindrome.cs" />
+    <Compile Include="Assets\02LinkedList\RemoveNode\RemoveNode.cs" />
+    <Compile Include="Assets\02LinkedList\ReverseList\ReverseList.cs" />
+    <Compile Include="Assets\02LinkedList\ReversePartialList\ReversePartialList.cs" />
     <Compile Include="Assets\main.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

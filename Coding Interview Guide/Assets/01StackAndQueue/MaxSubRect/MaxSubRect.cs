@@ -25,7 +25,6 @@ public class MaxSubRect : MonoBehaviour
         int maxArea = 0;
 
         int[] height = new int[map.GetLength(1)];
-        //Debug.Log(height.Length);
 
         for (int i = 0; i < map.GetLength(0); i++)
         {
