@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coding Interview Guide", "Coding Interview Guide.csproj", "{62D07E9D-05DD-3D06-FF30-C45E93A0FC69}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coding Interview Guide.Editor", "Coding Interview Guide.Editor.csproj", "{B03C5A8C-ED4F-5E2C-8D9F-986B38CB4EB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{62D07E9D-05DD-3D06-FF30-C45E93A0FC69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62D07E9D-05DD-3D06-FF30-C45E93A0FC69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62D07E9D-05DD-3D06-FF30-C45E93A0FC69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B03C5A8C-ED4F-5E2C-8D9F-986B38CB4EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B03C5A8C-ED4F-5E2C-8D9F-986B38CB4EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B03C5A8C-ED4F-5E2C-8D9F-986B38CB4EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B03C5A8C-ED4F-5E2C-8D9F-986B38CB4EB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

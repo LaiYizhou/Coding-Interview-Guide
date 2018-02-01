@@ -5,16 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{62D07E9D-05DD-3D06-FF30-C45E93A0FC69}</ProjectGuid>
+    <ProjectGuid>{B03C5A8C-ED4F-5E2C-8D9F-986B38CB4EB6}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.6.0f3</UnityVersion>
     <RootNamespace></RootNamespace>
@@ -52,11 +52,26 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>Library\UnityAssemblies\UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>Library\UnityAssemblies\UnityEngine.TestRunner.dll</HintPath>
@@ -64,17 +79,53 @@
     <Reference Include="nunit.framework">
       <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEditor.HoloLens.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>Library\UnityAssemblies\UnityEditor.VR.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.VR">
       <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WSA.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WSA.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Facebook.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Facebook.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
@@ -90,59 +141,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\01StackAndQueue\DogAndCatQueue\DogAndCatQueue.cs" />
-    <Compile Include="Assets\01StackAndQueue\DogAndCatQueue\Pet.cs" />
-    <Compile Include="Assets\01StackAndQueue\DogAndCatQueue\PetExtend.cs" />
-    <Compile Include="Assets\01StackAndQueue\HanoiProblem\Hanoi.cs" />
-    <Compile Include="Assets\01StackAndQueue\MaxAndMinValue\MaxAndMinValue.cs" />
-    <Compile Include="Assets\01StackAndQueue\MaxSubRect\MaxSubRect.cs" />
-    <Compile Include="Assets\01StackAndQueue\MaxTree\MaxTree.cs" />
-    <Compile Include="Assets\01StackAndQueue\MaxWindow\MaxWindow.cs" />
-    <Compile Include="Assets\01StackAndQueue\MinStack\MinStack.cs" />
-    <Compile Include="Assets\01StackAndQueue\ReverseStack\ReverseStack.cs" />
-    <Compile Include="Assets\01StackAndQueue\SortStackByStack\SortStackByStack.cs" />
-    <Compile Include="Assets\01StackAndQueue\TwoStackQueue\TwoStackQueue.cs" />
-    <Compile Include="Assets\02LinkedList\AddList\AddList.cs" />
-    <Compile Include="Assets\02LinkedList\CommonPart\CommonPart.cs" />
-    <Compile Include="Assets\02LinkedList\CopyListWithRand\CopyListWithRand.cs" />
-    <Compile Include="Assets\02LinkedList\DoubleNode.cs" />
-    <Compile Include="Assets\02LinkedList\InsertLoop\InsertLoop.cs" />
-    <Compile Include="Assets\02LinkedList\JosephusKill\JosephusProblem.cs" />
-    <Compile Include="Assets\02LinkedList\LastKthNode\LastKthNode.cs" />
-    <Compile Include="Assets\02LinkedList\LinkedListHelper.cs" />
-    <Compile Include="Assets\02LinkedList\MergeSortedList\MergeSortedList.cs" />
-    <Compile Include="Assets\02LinkedList\Node.cs" />
-    <Compile Include="Assets\02LinkedList\Palindrome\Palindrome.cs" />
-    <Compile Include="Assets\02LinkedList\Partition\ListPartition.cs" />
-    <Compile Include="Assets\02LinkedList\RandomNode.cs" />
-    <Compile Include="Assets\02LinkedList\Relocate\Relocate.cs" />
-    <Compile Include="Assets\02LinkedList\RemoveNode\RemoveNode.cs" />
-    <Compile Include="Assets\02LinkedList\RemoveRep\RemoveRep.cs" />
-    <Compile Include="Assets\02LinkedList\RemoveValueNode\RemoveValueNode.cs" />
-    <Compile Include="Assets\02LinkedList\ReverseKNodes\ReverseKNodes.cs" />
-    <Compile Include="Assets\02LinkedList\ReverseList\ReverseList.cs" />
-    <Compile Include="Assets\02LinkedList\ReversePartialList\ReversePartialList.cs" />
-    <Compile Include="Assets\02LinkedList\SelectSort\SelectSort.cs" />
-    <Compile Include="Assets\02LinkedList\TwoListsCrossProblem\TwoListsCrossProblem.cs" />
-    <Compile Include="Assets\03BinaryTree\OrderVisit\Order.cs" />
-    <Compile Include="Assets\03BinaryTree\TreeNode.cs" />
-    <Compile Include="Assets\InkPainter\Sample\Script\ClipPainter.cs" />
-    <Compile Include="Assets\InkPainter\Sample\Script\CollisionPainter.cs" />
-    <Compile Include="Assets\InkPainter\Sample\Script\CollisionReflectionPainter.cs" />
-    <Compile Include="Assets\InkPainter\Sample\Script\MousePainter.cs" />
-    <Compile Include="Assets\InkPainter\Sample\Script\ReflectPainter.cs" />
-    <Compile Include="Assets\InkPainter\Sample\Script\TextureRecovery.cs" />
-    <Compile Include="Assets\InkPainter\Script\Core\Brush.cs" />
-    <Compile Include="Assets\InkPainter\Script\Core\InkCanvas.cs" />
-    <Compile Include="Assets\InkPainter\Script\Core\Math.cs" />
-    <Compile Include="Assets\InkPainter\Script\Core\MeshOperator.cs" />
-    <Compile Include="Assets\InkPainter\Script\Effective\GrabArea.cs" />
-    <Compile Include="Assets\InkPainter\Script\Effective\HeightFluid.cs" />
-    <Compile Include="Assets\InkPainter\Script\Effective\ReverseUV.cs" />
-    <Compile Include="Assets\InkPainter\Script\Effective\TextureMorphing.cs" />
-    <Compile Include="Assets\InkPainter\Script\Extenision\GameObjectExtension.cs" />
-    <Compile Include="Assets\InkPainter\Script\Util\SceneViewCamera.cs" />
-    <Compile Include="Assets\main.cs" />
+    <ProjectReference Include="Coding Interview Guide.csproj">
+      <Project>{62D07E9D-05DD-3D06-FF30-C45E93A0FC69}</Project>
+      <Name>Coding Interview Guide</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\InkPainter\Script\Editor\UVChecker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\InkPainter\Sample\Shader\TessellateHeightTransform.shader" />
