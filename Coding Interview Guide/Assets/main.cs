@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,15 +9,20 @@ public class main : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
 	{
+
         Test();
-       //MaxSubRect maxSubRect = new MaxSubRect();
-       //MaxAndMinValue maxAndMinValue = new MaxAndMinValue();
 	}
 
     void Test()
     {
-        //Node head1 = LinkedListHelper.BuildNodeList(new[] {6, 1, 4, 3, 5, 2});
-        //LinkedListHelper.PrintList(head1);
+        ConvertToNumber convert1 = new ConvertToNumber("123");
+        ConvertToNumber convert2 = new ConvertToNumber("023");
+        ConvertToNumber convert3 = new ConvertToNumber("A23");
+        ConvertToNumber convert4 = new ConvertToNumber("0");
+        ConvertToNumber convert5 = new ConvertToNumber("2147483647");
+        ConvertToNumber convert6 = new ConvertToNumber("2147483648");
+        ConvertToNumber convert7 = new ConvertToNumber("-123");
+
     }
 
     // Update is called once per frame

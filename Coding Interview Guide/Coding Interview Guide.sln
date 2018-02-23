@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coding Interview Guide", "Coding Interview Guide.csproj", "{62D07E9D-05DD-3D06-FF30-C45E93A0FC69}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coding Interview Guide.Editor", "Coding Interview Guide.Editor.csproj", "{B03C5A8C-ED4F-5E2C-8D9F-986B38CB4EB6}"

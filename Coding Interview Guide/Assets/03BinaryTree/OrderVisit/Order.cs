@@ -28,7 +28,7 @@ public class Order : MonoBehaviour {
 	    TreeNode head = node1;
 
         PosOrderR(head);
-        PosOrder(head);
+	    PosOrder2(head);
 
     }
 
@@ -111,7 +111,7 @@ public class Order : MonoBehaviour {
 
     }
 
-    public void PosOrder(TreeNode head)
+    public void PosOrder1(TreeNode head)
     {
         if (head == null)
             return;
@@ -136,6 +136,32 @@ public class Order : MonoBehaviour {
         while (stack2.Count!=0)
         {
             Debug.Log(stack2.Pop().value);
+        }
+
+    }
+
+    public void PosOrder2(TreeNode head)
+    {
+        if (head == null)
+            return;
+
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+
+        stack.Push(head);
+
+        while (stack.Count != 0)
+        {
+            var c = stack.Peek();
+
+            if(c.left!=null && head != c.left && head != c.right)
+                stack.Push(c.left);
+            else if (c.right != null && head != c.right)
+                stack.Push(c.right);
+            else
+            {
+                Debug.Log(stack.Pop().value);
+                head = c;
+            }
         }
 
 
