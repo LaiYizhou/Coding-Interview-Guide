@@ -15,13 +15,13 @@ public class main : MonoBehaviour {
 
     void Test()
     {
-        ConvertToNumber convert1 = new ConvertToNumber("123");
-        ConvertToNumber convert2 = new ConvertToNumber("023");
-        ConvertToNumber convert3 = new ConvertToNumber("A23");
-        ConvertToNumber convert4 = new ConvertToNumber("0");
-        ConvertToNumber convert5 = new ConvertToNumber("2147483647");
-        ConvertToNumber convert6 = new ConvertToNumber("2147483648");
-        ConvertToNumber convert7 = new ConvertToNumber("-123");
+        //ConvertToNumber convert1 = new ConvertToNumber("123");
+        //ConvertToNumber convert2 = new ConvertToNumber("023");
+        //ConvertToNumber convert3 = new ConvertToNumber("A23");
+        //ConvertToNumber convert4 = new ConvertToNumber("0");
+        //ConvertToNumber convert5 = new ConvertToNumber("2147483647");
+        //ConvertToNumber convert6 = new ConvertToNumber("2147483648");
+        //ConvertToNumber convert7 = new ConvertToNumber("-123");
 
     }
 
